@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doni Granit - Biz Haqimizda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Doni Granit</div>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="home">Bosh sahifa</a></li>
+                    <li><a href="about.html" class="active" data-i18n="about">Biz haqimizda</a></li>
+                    <li><a href="results.html" data-i18n="results">Natijalar</a></li>
+                    <li><a href="registration.html" data-i18n="register">Royhatdan o'tish</a></li>
+                </ul>
+                <div class="controls">
+                    <button class="theme-toggle" id="theme-toggle">🌙</button>
+                    <select class="lang-select" id="lang-select">
+                        <option value="uz">UZ</option>
+                        <option value="ru">RU</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="fade-in">
+            <div class="section-title">
+                <h2 data-i18n="aboutTitle">Biz Haqimizda</h2>
+            </div>
+            <div class="card">
+                <p data-i18n="aboutDesc">Biz 10 yildan ortiq vaqt davomida O'zbekiston bozorida yuqori sifatli granit va
+                    marmar mahsulotlarini yetkazib beramiz. Bizning maqsadimiz — mijozlarimizga bardoshli va estetik
+                    jihatdan go'zal qurilish materiallarini taqdim etish.</p>
+                <!-- Placeholder for more content or image -->
+                <div style="margin-top: 2rem; border-radius: 8px; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1599690623624-9464e837df8c?q=80&w=2670&auto=format&fit=crop"
+                        alt="Marble texture" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

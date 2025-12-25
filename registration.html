@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doni Granit - Royhatdan otish</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Doni Granit</div>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="home">Bosh sahifa</a></li>
+                    <li><a href="about.html" data-i18n="about">Biz haqimizda</a></li>
+                    <li><a href="results.html" data-i18n="results">Natijalar</a></li>
+                    <li><a href="registration.html" class="active" data-i18n="register">Royhatdan o'tish</a></li>
+                </ul>
+                <div class="controls">
+                    <button class="theme-toggle" id="theme-toggle">🌙</button>
+                    <select class="lang-select" id="lang-select">
+                        <option value="uz">UZ</option>
+                        <option value="ru">RU</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="fade-in">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="section-title">
+                    <h2 data-i18n="regTitle">Royhatdan O'tish</h2>
+                    <p data-i18n="regDesc">Ma'lumotlaringizni qoldiring, biz siz bilan bog'lanamiz</p>
+                </div>
+
+                <form class="card">
+                    <div class="form-group">
+                        <label for="name" data-i18n="nameLabel">Ismingiz</label>
+                        <input type="text" id="name" class="form-control" required placeholder="Ismingizni kiriting">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" data-i18n="phoneLabel">Telefon raqamingiz</label>
+                        <input type="tel" id="phone" class="form-control" required placeholder="+998 90 123 45 67">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" data-i18n="addressLabel">Manzilingiz</label>
+                        <input type="text" id="address" class="form-control" placeholder="Toshkent sh...">
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;" data-i18n="submitBtn">Yuborish</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
